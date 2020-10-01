@@ -11,9 +11,9 @@ Because this project uses underlying libraries, cloning this repository will res
 
 <div>
 <br>
-  <h3>↓ ↓ ↓</h3>
+  <strong>↓ ↓ ↓</strong>
 <a class="button" href="http://web.vjzcorp.repl.co/assets/color-palette-final_v1.0release.zip" data-color-scheme="no-preference: light; light: dark; dark: dark;" data-icon="octicon-download" aria-label="Download VJZ-Corp/Qt-Color-Palette-Widget on GitHub">Download</a>
-  <h3>↑ ↑ ↑</h3>
+  <strong>↑ ↑ ↑</strong>
 <div>
 <br>
 
