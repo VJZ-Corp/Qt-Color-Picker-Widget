@@ -1,282 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ColorPaletteClass</class>
- <widget class="QWidget" name="ColorPaletteClass">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>652</width>
-    <height>241</height>
-   </rect>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>652</width>
-    <height>241</height>
-   </size>
-  </property>
-  <property name="windowTitle">
-   <string>ColorPalette</string>
-  </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>90</y>
-     <width>16</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>R</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>190</y>
-     <width>16</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>B</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>140</y>
-     <width>16</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>G</string>
-   </property>
-  </widget>
-  <widget class="QSlider" name="Blue">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>190</y>
-     <width>331</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="maximum">
-    <number>255</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QSlider" name="Red">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>90</y>
-     <width>331</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="maximum">
-    <number>255</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QSlider" name="Green">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>140</y>
-     <width>331</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="maximum">
-    <number>255</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="blueSpin">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>190</y>
-     <width>42</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="maximum">
-    <number>255</number>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="greenSpin">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>140</y>
-     <width>42</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="maximum">
-    <number>255</number>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="redSpin">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>90</y>
-     <width>42</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="maximum">
-    <number>255</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>20</y>
-     <width>281</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Color Palette Tool by Vincent Zhang</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="displayWidget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>460</x>
-     <y>80</y>
-     <width>171</width>
-     <height>141</height>
-    </rect>
-   </property>
-   <property name="autoFillBackground">
-    <bool>true</bool>
-   </property>
-  </widget>
- </widget>
- <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="ColorPalette.qrc"/>
- </resources>
- <connections>
-  <connection>
-   <sender>Red</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>redSpin</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>364</x>
-     <y>90</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>411</x>
-     <y>100</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>redSpin</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>Red</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>398</x>
-     <y>111</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>304</x>
-     <y>106</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Green</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>greenSpin</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>339</x>
-     <y>141</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>417</x>
-     <y>147</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>greenSpin</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>Green</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>403</x>
-     <y>160</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>265</x>
-     <y>157</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Blue</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>blueSpin</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>367</x>
-     <y>199</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>394</x>
-     <y>194</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>blueSpin</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>Blue</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>397</x>
-     <y>205</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>363</x>
-     <y>203</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
-</ui> 
+   <class>ColorPaletteClass</class>
+   <widget class="QWidget" name="ColorPaletteClass">
+      <property name="geometry">
+         <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>652</width>
+            <height>241</height>
+         </rect>
+      </property>
+      <property name="maximumSize">
+         <size>
+            <width>652</width>
+            <height>241</height>
+         </size>
+      </property>
+      <property name="windowTitle">
+         <string>ColorPalette</string>
+      </property>
+      <widget class="QLabel" name="label">
+         <property name="geometry">
+            <rect>
+               <x>30</x>
+               <y>90</y>
+               <width>16</width>
+               <height>16</height>
+            </rect>
+         </property>
+         <property name="text">
+            <string>R</string>
+         </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+         <property name="geometry">
+            <rect>
+               <x>30</x>
+               <y>190</y>
+               <width>16</width>
+               <height>16</height>
+            </rect>
+         </property>
+         <property name="text">
+            <string>B</string>
+         </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+         <property name="geometry">
+            <rect>
+               <x>30</x>
+               <y>140</y>
+               <width>16</width>
+               <height>16</height>
+            </rect>
+         </property>
+         <property name="text">
+            <string>G</string>
+         </property>
+      </widget>
+      <widget class="QSlider" name="Blue">
+         <property name="geometry">
+            <rect>
+               <x>50</x>
+               <y>190</y>
+               <width>331</width>
+               <height>22</height>
+            </rect>
+         </property>
+         <property name="maximum">
+            <number>255</number>
+         </property>
+         <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+         </property>
+      </widget>
+      <widget class="QSlider" name="Red">
+         <property name="geometry">
+            <rect>
+               <x>50</x>
+               <y>90</y>
+               <width>331</width>
+               <height>22</height>
+            </rect>
+         </property>
+         <property name="maximum">
+            <number>255</number>
+         </property>
+         <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+         </property>
+      </widget>
+      <widget class="QSlider" name="Green">
+         <property name="geometry">
+            <rect>
+               <x>50</x>
+               <y>140</y>
+               <width>331</width>
+               <height>22</height>
+            </rect>
+         </property>
+         <property name="maximum">
+            <number>255</number>
+         </property>
+         <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+         </property>
+      </widget>
+      <widget class="QSpinBox" name="blueSpin">
+         <property name="geometry">
+            <rect>
+               <x>390</x>
+               <y>190</y>
+               <width>42</width>
+               <height>22</height>
+            </rect>
+         </property>
+         <property name="maximum">
+            <number>255</number>
+         </property>
+      </widget>
+      <widget class="QSpinBox" name="greenSpin">
+         <property name="geometry">
+            <rect>
+               <x>390</x>
+               <y>140</y>
+               <width>42</width>
+               <height>22</height>
+            </rect>
+         </property>
+         <property name="maximum">
+            <number>255</number>
+         </property>
+      </widget>
+      <widget class="QSpinBox" name="redSpin">
+         <property name="geometry">
+            <rect>
+               <x>390</x>
+               <y>90</y>
+               <width>42</width>
+               <height>22</height>
+            </rect>
+         </property>
+         <property name="maximum">
+            <number>255</number>
+         </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+         <property name="geometry">
+            <rect>
+               <x>190</x>
+               <y>20</y>
+               <width>281</width>
+               <height>41</height>
+            </rect>
+         </property>
+         <property name="font">
+            <font>
+               <pointsize>10</pointsize>
+            </font>
+         </property>
+         <property name="text">
+            <string>Color Palette Tool by Vincent Zhang</string>
+         </property>
+      </widget>
+      <widget class="QWidget" name="displayWidget" native="true">
+         <property name="geometry">
+            <rect>
+               <x>460</x>
+               <y>80</y>
+               <width>171</width>
+               <height>141</height>
+            </rect>
+         </property>
+         <property name="autoFillBackground">
+            <bool>true</bool>
+         </property>
+      </widget>
+   </widget>
+   <layoutdefault spacing="6" margin="11" />
+   <resources>
+      <include location="ColorPalette.qrc" />
+   </resources>
+   <connections>
+      <connection>
+         <sender>Red</sender>
+         <signal>valueChanged(int)</signal>
+         <receiver>redSpin</receiver>
+         <slot>setValue(int)</slot>
+         <hints>
+            <hint type="sourcelabel">
+               <x>364</x>
+               <y>90</y>
+            </hint>
+            <hint type="destinationlabel">
+               <x>411</x>
+               <y>100</y>
+            </hint>
+         </hints>
+      </connection>
+      <connection>
+         <sender>redSpin</sender>
+         <signal>valueChanged(int)</signal>
+         <receiver>Red</receiver>
+         <slot>setValue(int)</slot>
+         <hints>
+            <hint type="sourcelabel">
+               <x>398</x>
+               <y>111</y>
+            </hint>
+            <hint type="destinationlabel">
+               <x>304</x>
+               <y>106</y>
+            </hint>
+         </hints>
+      </connection>
+      <connection>
+         <sender>Green</sender>
+         <signal>valueChanged(int)</signal>
+         <receiver>greenSpin</receiver>
+         <slot>setValue(int)</slot>
+         <hints>
+            <hint type="sourcelabel">
+               <x>339</x>
+               <y>141</y>
+            </hint>
+            <hint type="destinationlabel">
+               <x>417</x>
+               <y>147</y>
+            </hint>
+         </hints>
+      </connection>
+      <connection>
+         <sender>greenSpin</sender>
+         <signal>valueChanged(int)</signal>
+         <receiver>Green</receiver>
+         <slot>setValue(int)</slot>
+         <hints>
+            <hint type="sourcelabel">
+               <x>403</x>
+               <y>160</y>
+            </hint>
+            <hint type="destinationlabel">
+               <x>265</x>
+               <y>157</y>
+            </hint>
+         </hints>
+      </connection>
+      <connection>
+         <sender>Blue</sender>
+         <signal>valueChanged(int)</signal>
+         <receiver>blueSpin</receiver>
+         <slot>setValue(int)</slot>
+         <hints>
+            <hint type="sourcelabel">
+               <x>367</x>
+               <y>199</y>
+            </hint>
+            <hint type="destinationlabel">
+               <x>394</x>
+               <y>194</y>
+            </hint>
+         </hints>
+      </connection>
+      <connection>
+         <sender>blueSpin</sender>
+         <signal>valueChanged(int)</signal>
+         <receiver>Blue</receiver>
+         <slot>setValue(int)</slot>
+         <hints>
+            <hint type="sourcelabel">
+               <x>397</x>
+               <y>205</y>
+            </hint>
+            <hint type="destinationlabel">
+               <x>363</x>
+               <y>203</y>
+            </hint>
+         </hints>
+      </connection>
+   </connections>
+</ui>
