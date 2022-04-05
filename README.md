@@ -1,5 +1,5 @@
 # Qt-Color-Palette-Widget
-This is the source code repository of the color picker GUI. The actual widget is designed in C++ and many underlying libraries are implemented by Qt. All rights reserved to Vincent Zhang.
+This is the source code repository of the color picker GUI. The actual widget is designed in C++ and many underlying libraries are implemented by Qt.
 
 <h1>About</h1>
 
